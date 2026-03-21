@@ -264,7 +264,6 @@ const workspacesApi = api
           return !_.eq(currentArg, previousArg);
         },
         providesTags: () => [{ type: TAGS.VIEWS }],
-        invalidatesTags: () => [{ type: TAGS.VIEWS }],
       }),
       assignViewToWorkspace: builder.mutation({
         query: (queryArg) => ({
